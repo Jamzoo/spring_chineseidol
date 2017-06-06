@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xmlns:util="http://www.springframework.org/schema/util"
+	xsi:schemaLocation="
+http://www.springframework.org/schema/beans 
+http://www.springframework.org/schema/beans/spring-beans.xsd
+http://www.springframework.org/schema/util 
+http://www.springframework.org/schema/util/spring-util.xsd">
+	<bean id="city" class="bo.City"/>
+	<!-- util:list列表 -->
+	<util:list id="cities">
+		<bean class="bo.City" p:name="北京" p:state="北京" p:population="10000000"/>
+		<bean class="bo.City" p:name="上海" p:state="上海" p:population="10000000"/>
+		<bean class="bo.City" p:name="广州" p:state="广东" p:population="9000000"/>
+		<bean class="bo.City" p:name="南京" p:state="江苏" p:population="5000000"/>
+		<bean class="bo.City" p:name="拉萨" p:state="西藏" p:population="1000000"/>
+	</util:list>
+	<bean id="cityTest" class="bo.CityTest">
+		<property name="chosenCity" value="#{cities[1]}"/>
+		<property name="bigCities" value="#{cities.?[population gt 5000000]}"/>
+		<property name="aBigCity" value="#{cities.^[population gt 5000000]}"/>
+	</bean>
+</beans>

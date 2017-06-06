@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+<!-- 引入p标签配置对象属性 -->
+    <bean id="小李" class="com.jee.spring.chineseIdol.Juggler">
+    	<constructor-arg value="10"/>
+    </bean>
+    <bean id="bike" class="com.jee.spring.chineseIdol.Bike"/>
+    <bean id="小张" class="com.jee.spring.chineseIdol.RidableJuggler">
+    	<constructor-arg value="10"/>
+    	<constructor-arg ref="bike" />
+    </bean>
+     <bean id="saxophone" class="com.jee.spring.chineseIdol.Saxophone" /> 
+   <bean id="piano" class="com.jee.spring.chineseIdol.Piano" /> 
+   <bean id="guiltar" class="com.jee.spring.chineseIdol.Guiltar" /> 
+   <bean id="小王" class="com.jee.spring.chineseIdol.Instrumentalist" p:song="memory" p:instrument-ref="piano" /> <!-- 设置属性单值 -->
+   <bean id="小强" class="com.jaee.spring.chineseIdol.SuperInstrumentalist">
+	   <property name="instruments">
+		   <list>
+			  <ref bean="saxophone" /> 
+			  <ref bean="piano" /> 
+			  <ref bean="guiltar" /> 
+		   </list>
+	   </property>
+	   <!-- 设置属性多值 -->
+   </bean>
+    <bean id="theStage" class="com.jee.spring.chineseIdol.Stage" factory-method="getInstance"/>
+    <bean id="auditorium" class="com.jee.spring.chineseIdol.Auditorium" init-method="turnOnLight" destroy-method="turnOffLight" />   
+</beans>

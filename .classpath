@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/jre1.8.0_131">
+		<attributes>
+			<attribute name="owner.project.facets" value="java"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.jst.server.core.container/org.eclipse.jst.server.tomcat.runtimeTarget/Apache Tomcat v7.0">
+		<attributes>
+			<attribute name="owner.project.facets" value="jst.web"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.web.container"/>
+	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.module.container"/>
+	<classpathentry kind="lib" path="build/bin/aspectjrt-1.7.3.jar"/>
+	<classpathentry kind="lib" path="build/bin/aspectjweaver.jar"/>
+	<classpathentry kind="lib" path="build/bin/com.springsource.org.aopalliance-1.0.0.jar"/>
+	<classpathentry kind="lib" path="build/bin/commons-logging-1.1.1.jar"/>
+	<classpathentry kind="lib" path="build/bin/javax.inject_1.0.0.v20091030.jar"/>
+	<classpathentry kind="lib" path="build/bin/spring-aop-3.2.5.RELEASE.jar"/>
+	<classpathentry kind="lib" path="build/bin/spring-aspects-3.2.5.RELEASE.jar"/>
+	<classpathentry kind="lib" path="build/bin/spring-beans-3.2.5.RELEASE.jar"/>
+	<classpathentry kind="lib" path="build/bin/spring-context-3.2.5.RELEASE.jar"/>
+	<classpathentry kind="lib" path="build/bin/spring-core-3.2.5.RELEASE.jar"/>
+	<classpathentry kind="lib" path="build/bin/spring-expression-3.2.5.RELEASE.jar"/>
+	<classpathentry kind="lib" path="build/bin/spring-instrument-3.2.5.RELEASE.jar"/>
+	<classpathentry kind="lib" path="build/bin/spring-instrument-tomcat-3.2.5.RELEASE.jar"/>
+	<classpathentry kind="lib" path="build/bin/spring-jdbc-3.2.5.RELEASE.jar"/>
+	<classpathentry kind="lib" path="build/bin/spring-jms-3.2.5.RELEASE.jar"/>
+	<classpathentry kind="lib" path="build/bin/spring-orm-3.2.5.RELEASE.jar"/>
+	<classpathentry kind="lib" path="build/bin/spring-oxm-3.2.5.RELEASE.jar"/>
+	<classpathentry kind="lib" path="build/bin/spring-tx-3.2.5.RELEASE.jar"/>
+	<classpathentry kind="lib" path="build/bin/spring-web-3.2.5.RELEASE.jar"/>
+	<classpathentry kind="output" path="build/classes"/>
+</classpath>
