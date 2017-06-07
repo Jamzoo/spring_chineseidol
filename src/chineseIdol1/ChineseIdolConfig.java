@@ -1,4 +1,4 @@
-package chineseIdol;
+package chineseIdol1;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.Bean;

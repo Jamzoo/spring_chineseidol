@@ -1,4 +1,4 @@
-package chineseIdol;
+package chineseIdol1;
 
 public class Juggler implements Performer {
 	private int balls = 3;

@@ -1,4 +1,4 @@
-package chineseIdol;
+package chineseIdol1;
 
 public class Piano implements Instrument {
 
